@@ -5,8 +5,8 @@
 #include <iostream>
 using namespace std;
 const int MAX = 65536;
-int map[501][501], path[501][501], team[501][501];
-int res[501];
+int map[501][501], path[501][501], team[501][501]; //path存储从i到j的最短路径数量，team存储从i到j的最短路径上的team数量，包括i和j的team
+int res[501]; //res存储每一个城市中的team数量
 int main(){
     for(int i = 0; i < 501; i++){
         for(int j = 0; j < 501; j++){
